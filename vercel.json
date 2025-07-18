@@ -1,6 +1,7 @@
 {
-  "buildCommand": "cd frontend && npm run build",
+  "buildCommand": "cd frontend && npm ci && npm run build",
   "outputDirectory": "frontend/dist",
+  "installCommand": "cd frontend && npm install",
   "functions": {
     "api/index.js": {
       "maxDuration": 30
@@ -14,6 +15,10 @@
     {
       "source": "/socket.io/(.*)",
       "destination": "/api/index.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
