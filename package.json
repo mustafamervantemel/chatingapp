@@ -1,0 +1,14 @@
+{
+  "name": "seslimod",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd src && npm run vercel-build",
+    "dev": "cd src && npm run dev",
+    "start": "cd src && npm start",
+    "install:all": "cd src && npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
