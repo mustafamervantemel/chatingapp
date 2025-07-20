@@ -1,22 +1,5 @@
 {
   "buildCommand": "cd src && npm run vercel-build",
   "outputDirectory": "src/frontend/dist",
-  "installCommand": "cd src && npm install && cd frontend && npm install",
-  "devCommand": "cd src/frontend && npm run dev",
-  "framework": "vite",
-  "functions": {
-    "src/api/index.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/index.js"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "installCommand": "cd src && npm install && cd frontend && npm install"
 }
